@@ -258,4 +258,4 @@ router.post("/get-email-template", get);
 
 router.get("/get-email-template/:id", getById);
 
-module.exports = router
+export default router;

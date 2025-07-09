@@ -196,4 +196,4 @@ router.get("/system-preferences", get);
  */
 router.get("/system-preferences-types", getTypes);
 
-module.exports = router
+export default router;

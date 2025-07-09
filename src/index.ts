@@ -10,7 +10,7 @@ import { responseHelper } from "./helpers/response";
 
 import routes from "./presentation/routes/route"
 
-import swaggerSpec from "../swagger"
+import swaggerSpec from "./swagger"
 import swaggerUi from 'swagger-ui-express';
 
 

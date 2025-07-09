@@ -1,18 +1,14 @@
 import express from "express";
 import { verifyToken } from "../middleware/authMiddleware";
+import authRoutes from "./authRoutes";
+import userRoutes from "./userRoutes";
+import emailTemplateRoutes from "./emailTemplateRoutes";
+import itemOneRoutes from "./itemOneRoutes";
+import rolesRoutes from "./rolesRoutes";
+import systemPrefRoutes from "./systemPrefRoutes";
+import notificationRoutes from "./notificationRoutes";
+
 const router = express.Router();
-
-
-
-
-const authRoutes = require("./authRoutes");
-const userRoutes = require("./userRoutes");
-const emailTemplateRoutes = require("./emailTemplateRoutes");
-const itemOneRoutes = require("./itemOneRoutes");
-const rolesRoutes = require("./rolesRoutes");
-const systemPrefRoutes = require("./systemPrefRoutes");
-const notificationRoutes = require("./notificationRoutes");
-
 
 router.use(authRoutes);
 router.use(verifyToken);
@@ -23,9 +19,4 @@ router.use(itemOneRoutes);
 router.use(rolesRoutes);
 router.use(notificationRoutes);
 
-
-
-
-
-
-module.exports = router;
+export default router;

@@ -473,4 +473,4 @@ router.post("/assign-role", checkPermission(claims.assignRole), validate(AssignR
  *                       example: "Internal server error"
  */
 router.post("/assign-role-permissions", checkPermission(claims.assignRolePermission), validate(AssignRolePermissionSchema), assignPermissions);
-module.exports = router
+export default router;

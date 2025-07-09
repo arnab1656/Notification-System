@@ -395,4 +395,4 @@ router.get("/get-ItemOne/:id", checkPermission(claims.ViewItemOne), getById);
 router.delete("/ItemOne/:id", checkPermission(claims.deleteItemOne), destroy);
 
 
-module.exports = router
+export default router;

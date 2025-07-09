@@ -285,4 +285,4 @@ router.get("/users-info", _getUserInfo);
 
 router.get("/permissions", _getRolePermissions);
 
-module.exports = router
+export default router;

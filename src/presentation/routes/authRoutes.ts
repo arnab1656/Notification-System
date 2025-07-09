@@ -163,4 +163,4 @@ router.post("/auth-register", validate(userSchema), registration);
 
 router.post("/auth-otp-verification", validate(userVerificationSchema), verify);
 
-module.exports = router
+export default router

@@ -84,4 +84,4 @@ router.post("/create-notification", validate(NotificationSchema), create)
  */
 router.get("/notification-types", getNotificationTypes)
 
-module.exports = router
+export default router;
